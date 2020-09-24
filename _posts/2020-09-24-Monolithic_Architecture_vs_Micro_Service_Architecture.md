@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Monolithic Architecture 
-<br>vs. Micro Service Architecture"
+title: "Monolithic Architecture과 Micro Service Architecture"
 author: "Lin"
 tags: 개발지식
 ---
