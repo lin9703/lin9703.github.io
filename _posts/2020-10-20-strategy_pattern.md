@@ -2,7 +2,7 @@
 layout: post
 title: "전략 패턴 (Strategy Pattern)"
 author: "Lin"
-tags: 개발지
+tags: 개발지식
 ---
    
 ## 전략 패턴 (Strategy Pattern)
