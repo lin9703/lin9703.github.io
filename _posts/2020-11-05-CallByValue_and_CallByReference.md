@@ -6,7 +6,7 @@ tags: JAVA
 ---
 
 메소드로 인자값을 넘기는 방법은 2가지가 있다.
-
+<br>
 ## Call by value
 값에 의한 호출
 메소드 호출 시 사용되는 인자의 메모리에 저장된 _값_ 을 복사한다.<br>
@@ -17,11 +17,15 @@ tags: JAVA
 메소드 호출 시 사용되는 인자 값의 메모리에 저장된 _주소_ 를 복사한다.<br>
 메소드 내에서도 원래의 값에 접근이 가능하다.
 
+<br>
+
 ---
 
-<h3> 자바는 항상 Call by value이다.
+<h3> 자바는 항상 Call by value이다.<br>
 불행하게도, 객체를 전달할 때 Reference를 전달하는데 이것은 초보자들을 헷갈리게 한다.</h3>
-출처 : https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value
+
+[출처](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value)
+
 <br>
 
 {% highlight java %}
@@ -44,12 +48,11 @@ public static void foo(Dog d) {
     d.getName().equals("Fifi"); // true
 }
 {% endhighlight %}
- 
-<br>
 
 객체 참조가 value에 의해 전달 된 것처럼 main의 aDog는 foo 함수의 Dog "Fifi"와 함께 변경되지 않는다.<br>
 reference로 전달 된다면, foo를 호출 한 후 main에 있는 aDog.getName()은 "Fifi"를 반환 했을 것이다. 
 
+<br>
 {% highlight java %}
 public static void main(String[] args) {
     Dog aDog = new Dog("Max");
@@ -69,10 +72,11 @@ public static void foo(Dog d) {
 }
 {% endhighlight %}
 
-의 예에서, foo(aDog) 를 호출한 후에위 aDog.getName()은 Fifi 가 된다. <br>
+의 예에서, foo(aDog) 를 호출한 후에 aDog.getName()은 Fifi 가 된다. <br>
 왜냐하면 객체의 이름은 foo 내부에서 setName('Fifi') 되었기 때문이다. <br>
 foo가 d에서 수행하는 모든 연산은 모든 실질적인 목적을 위해 aDog에서 수행되지만, 변수 aDog 자체의 값을 변경할 수는 없다. 
 
+<br>
 <h3> 요약 </h3>
 call by value로 전달된 것처럼 foo 내부에서의 변경(new Dog("Fifi"))는 적용되지 않는다.
 
