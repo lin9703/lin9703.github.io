@@ -6,7 +6,7 @@ tags: JAVA
 ---
 
 메소드로 인자값을 넘기는 방법은 2가지가 있다.
-<br>
+<br><br>
 ## Call by value
 값에 의한 호출
 메소드 호출 시 사용되는 인자의 메모리에 저장된 _값_ 을 복사한다.<br>
@@ -21,8 +21,8 @@ tags: JAVA
 
 ---
 
-<h3> 자바는 항상 Call by value이다.<br>
-불행하게도, 객체를 전달할 때 Reference를 전달하는데 이것은 초보자들을 헷갈리게 한다.</h3>
+<h2>자바는 항상 Call by value이다.<br>
+불행하게도, 객체를 전달할 때 Reference를 전달하는데 이것은 초보자들을 헷갈리게 한다.</h2>
 
 [출처](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value)
 
@@ -72,12 +72,12 @@ public static void foo(Dog d) {
 }
 {% endhighlight %}
 
-의 예에서, foo(aDog) 를 호출한 후에 aDog.getName()은 Fifi 가 된다. <br>
+foo(aDog) 를 호출한 후에 aDog.getName()은 Fifi 가 된다. <br>
 왜냐하면 객체의 이름은 foo 내부에서 setName('Fifi') 되었기 때문이다. <br>
 foo가 d에서 수행하는 모든 연산은 모든 실질적인 목적을 위해 aDog에서 수행되지만, 변수 aDog 자체의 값을 변경할 수는 없다. 
 
 <br>
-<h3> 요약 </h3>
+<h2> 요약 </h2>
 call by value로 전달된 것처럼 foo 내부에서의 변경(new Dog("Fifi"))는 적용되지 않는다.
 
 하지만 setter 메소드를 이용한 aDog필드의 값은 변경이 가능하다. 이 때문에 사람들이 헷갈려한다. 
