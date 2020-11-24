@@ -29,6 +29,11 @@ _Activity를 표현_ 한다. <br>
 Activity Context는 Activity 내에서 사용 가능한 Context이다. <br>
 이 Context는 _Activity의 생명주기_ 와 묶여 있어 onDestroy()와 함께 사라진다.
 Activity 범위 내에서 Context를 전달하거나 현재 Context에 생명주기가 엮여있는 Context가 필요한 경우에는 Activity Context를 사용한다. 
+<br><br>
+
+## 메모리 누수 방지
+Context를 잘못 사용하면 메모리 누수를 발생시킬 수 있다. <br>
+
 
 <br><br>
 [참고 블로그 1](https://www.charlezz.com/?p=44580)
