@@ -60,6 +60,39 @@ Model과 View 사이의 의존성 발생 --> 앱이 커지고 복잡해질수록
 
 ---
 
+# MVP (Model View Presenter)
+### MVC에서 파생된 Model과 View 간의 의존성이 없는 아키텍처 패턴
+
+### 1) 구조
+<img src="https://blog.kakaocdn.net/dn/clZlsT/btqBTLzeUCL/IDA8Ga6Yarndgr88g9Nkhk/img.png"  width="400">
+
+- Controller : View에서 요청한 정보로 Model을 가공하여 View에 전달해주는 부분 (View와 Model을 붙여주는 접착제 역할)
+<br><br>
+
+### 2) 동작 순서 
+1. 사용자의 모든 Action은 View를 통해 들어오게 됩니다.
+2. View는 데이터를 Presenter에 요청합니다.
+3. Presenter는 Model에게 데이터를 요청합니다.
+4. Model은 Presenter에서 요청받은 데이터를 응답합니다.
+5. Presenter는 View에게 데이터를 응답합니다.
+6. View는 Presenter가 응답한 데이터를 이용하여 화면을 나타냅니다. <br>
+(View와 Presenter는 1:1 관계입니다. Presenter는 해당 View를 참조하고 있습니다.)<br>
+(Presenter는 View의 Model 인스턴스를 가지고, Model과 View 사이의 매개체 역할을 합니다.)
+
+--> Presenter가 Model-View 사이에서 관리를 해주기 때문에 Model-View 의존성이 없다. <br>
+하지만, 앱이 커질수록 View-Presenter의 의존성이 강해지는 문제점이 발생한다.<br><br>
+
+### 3) 장점 
+Model-View 의존성이 없다.
+<br><br>
+
+### 4) 단점
+View-Presenter가 1:1 관계이기 때문에 서로 간의 의존성 커진다. <br>
+필요한 클래스 개수가 많아진다.
+<br><br><br>
+
+---
+
 
 <br>[참고 블로그1](https://brunch.co.kr/@oemilk/113)
 <br>[참고 블로그2](https://beomy.tistory.com/43)
