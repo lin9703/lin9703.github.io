@@ -15,7 +15,7 @@ tags: Android
 프로그램에서 Presentation Logic과 Business Logic를 구현하는데 데이터와 UI는 필수적이다.
 
 > Presentation Logic: 실제 눈에 보이는 GUI(Graphic User Interface)로서 화면을 구성하는 코드 <br>
-> Business Logic: 데이터를 보여주기 위해서 DB를 검색하거 GUI 화면에서 새롭게 발생한 데이터를 DB에 저장하는 등 실제적인 작업을 하는 코드 <br>
+> Business Logic: 데이터를 보여주기 위해서 DB를 검색하거나 GUI 화면에서 새롭게 발생한 데이터를 DB에 저장하는 등 실제적인 작업을 하는 코드 <br>
 > [출처](https://blog.naver.com/blayan/220569833085)
 
 <br>
@@ -66,7 +66,7 @@ Model과 View 사이의 의존성 발생 --> 앱이 커지고 복잡해질수록
 ### 1) 구조
 <img src="https://blog.kakaocdn.net/dn/clZlsT/btqBTLzeUCL/IDA8Ga6Yarndgr88g9Nkhk/img.png"  width="400">
 
-- Controller : View에서 요청한 정보로 Model을 가공하여 View에 전달해주는 부분 (View와 Model을 붙여주는 접착제 역할)
+- Presenter : View에서 요청한 정보로 Model을 가공하여 View에 전달해주는 부분 (View와 Model을 붙여주는 접착제 역할)
 <br><br>
 
 ### 2) 동작 순서 
@@ -93,6 +93,45 @@ View-Presenter가 1:1 관계이기 때문에 서로 간의 의존성 커진다. 
 
 ---
 
+# MVVM (Model View ViewModel)
+### MVC에서 파생된 Model-View와 Controller-View 간의 의존성도 고려하여 각 구성 요소가 독립적으로 작성되고 테스트되도록 설계된 아키텍처 패턴
+
+### 1) 구조
+<img src="https://blog.kakaocdn.net/dn/CiXz0/btqBQ1iMiVT/staXr7UO95opKgXEU01EY0/img.png"  width="400">
+
+- ViewModel : View를 표현하기 위해 만든 Model로서 View를 나타내주기 위한 Model이자 View를 나타내기 위한 데이터 처리를 하는 부분 
+<br><br>
+
+### 2) 동작 순서 
+1. 사용자의 모든 Action은 View를 통해 들어오게 됩니다.
+2. ViewModel은 Action에 해당하는 Presentation Logic을 처리하여 View에 데이터를 전달합니다. <br>
+(ViewModel은 View를 참조하지 않아 독립적이다. ViewModel-View는 1:n 관계)
+3. View는 자신이 이용할 ViewModel을 선택해 바인딩하여 업데이트를 받게 됩니다. <br>
+(Command 패턴이나 Data Binding을 이용하여 View-ViewModel 간 의존성을 없앨 수 있다.)
+4. Model이 변경되면 해당하는 ViewModel을 이용하년 View가 자동으로 업데이트 됩니다. <br>
+(ViewModel은 View를 나타내주기 위한 Model이자, View의 Presentation Logic을 처리)
+
+--> MVP와 마찬가지로 Model-View 의존성이 없다. <br>
+또한, MVP처럼 View-ViewModel이 1:1 관계가 아니라 독립적이기 때문에 이 사이에서 의존성도 없다.
+
+<br>
+
+> Command 패턴: 요청을 객체 형태로 캡슐화하여 사용자가 보낸 요청을 나중에 이용할 수 있도록 메서드 이름, 매개변수 등 요청에 필요한 정보를 저장 또는 로깅, 취소할 수 있게 하는 패턴 <br>
+> Data Binding: 공급자와 소비자의 데이터 원본을 함게 바인딩하고 동기화하는 기술 (안드로이드에서는 JAVA에서 처리하던 일을 Xml에서 처리한다.) [출처](https://brunch.co.kr/@oemilk/107)
+
+<br>
+
+### 3) 장점 
+Model-View 의존성이 없다.<br>
+View-ViewModel 의존성이 없다. (Command 패턴과 Data Binding 사용)<br>
+중복되는 코드 모듈화 가능.
+<br><br>
+
+### 4) 단점
+ViewModel 설계가 쉽지 않다.
+<br><br><br>
+
+---
 
 <br>[참고 블로그1](https://brunch.co.kr/@oemilk/113)
 <br>[참고 블로그2](https://beomy.tistory.com/43)
