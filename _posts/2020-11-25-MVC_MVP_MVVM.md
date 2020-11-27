@@ -4,6 +4,7 @@ title: "MVC, MVP, MVVM"
 author: "Lin"
 tags: Android
 ---
+안드로이드 앱을 논리적 구성 요소로 체계화하려는 _베스트 프래틱스_ 접근법은 지속적으로 발전했다. <br>
 안드로이드 앱을 개발할 때 사용할 수 있는 여러 아키텍처 패턴들이 있다.
 - MVC, MVP, MVVM 등
 
@@ -130,6 +131,14 @@ View-ViewModel 의존성이 없다. (Command 패턴과 Data Binding 사용)<br>
 ### 4) 단점
 ViewModel 설계가 쉽지 않다.
 <br><br><br>
+
+---
+
+<br>
+어떤 패턴을 써야 하는지에 대한 정답은 없다. <br>
+같은 패턴이라도 어떤 라이브러리를 썼는지에 따라 구현법이 다르고, 장단점도 다르다.<br>
+MVW(Model-View-Whatever) 패턴이 있듯이 각자의 개발 상황이나 환경에 따라 적절하게 이용하는 게 좋다. 
+<br><br>
 
 ---
 
