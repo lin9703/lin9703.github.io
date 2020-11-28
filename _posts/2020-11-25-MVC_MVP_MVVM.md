@@ -108,8 +108,10 @@ View-Presenter가 1:1 관계이기 때문에 서로 간의 의존성 커진다. 
 2. ViewModel은 Action에 해당하는 Presentation Logic을 처리하여 View에 데이터를 전달합니다. <br>
 (ViewModel은 View를 참조하지 않아 독립적이다. ViewModel-View는 1:n 관계)
 3. View는 자신이 이용할 ViewModel을 선택해 바인딩하여 업데이트를 받게 됩니다. <br>
-(Command 패턴이나 Data Binding을 이용하여 View-ViewModel 간 의존성을 없앨 수 있다.)
-4. Model이 변경되면 해당하는 ViewModel을 이용하년 View가 자동으로 업데이트 됩니다. <br>
+(Command 패턴과 Data Binding을 이용하여 View-ViewModel 간 의존성을 없앨 수 있다.
+- Command 패턴은 ViewModel이 View의 Request를 받아 동작을 수행하는 과정에서 적용 <br>
+- Data Binding은 ViewModel의 데이터를 View로 나타내는 과정에서 적용)
+4. Model이 변경되면 해당하는 ViewModel을 이용하면 View가 자동으로 업데이트 됩니다. <br>
 (ViewModel은 View를 나타내주기 위한 Model이자, View의 Presentation Logic을 처리)
 
 --> MVP와 마찬가지로 Model-View 의존성이 없다. <br>
