@@ -4,7 +4,7 @@ title: "거품 정렬(Bubble Sort)"
 author: "Lin"
 tags: 알고리즘 CSStudy
 ---
-### CS Study Day 1 - Part1
+### CS Study Day 1 - Part2
 
 <br>
 Sorting 알고리즘은 크게 Comparions 방식과 Non-Comparions 방식으로 나뉜다.
@@ -46,7 +46,7 @@ public int[] bubbleSort(int[] arr) {
 <br>
 
 ### 시간 복잡도
-- _(n-1) + (n-2) + (n-3) + .... + 2 + 1 => n(n-1)/2_ 이므로, **O(n^2)** 
+- `(n-1) + (n-2) + (n-3) + .... + 2 + 1 => n(n-1)/2` 이므로, **O(n^2)** 
 - 항상 2개의 원소를 비교하기 때문에 최악의 경우, 최선의 경우, 평균의 경우 모두 시간 복잡도가 O(N^2)으로 동일
 
 <br>
