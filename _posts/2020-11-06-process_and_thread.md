@@ -2,7 +2,7 @@
 layout: post
 title: "Process와 Thread"
 author: "Lin"
-tags: 개발지식
+tags: 운영체제
 ---
 
 
