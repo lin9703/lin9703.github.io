@@ -8,7 +8,9 @@ tags: 자료구조 JAVA CSStudy
 
 <br>
 
-ArrayList와 LinkedList는 모두 Java에서 제공한 List 인터페이스를 구현한 Collection 구현체이다. <br>
+ArrayList와 LinkedList는 모두 Java에서 제공한 List 인터페이스를 구현한 Collection 구현체이다.
+
+<br>
 
 ### ArrayList
 내부적으로 데이터를 배열에서 관리하며 데이터의 추가, 삭제를 위해 임시 배열을 생성해 데이터를 복사한다.

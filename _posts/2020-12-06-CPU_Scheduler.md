@@ -18,6 +18,7 @@ CPU가 하나의 프로세스 작업이 끝나면 다음 프로세스 작업을 
     2. Interactive System: 빠른 응답 시간 / 적은 대기 시간 
     3. Real-time System: 기한(deadline)에 맞추기
     
+<br>
 CPU 스케줄링에는 2가지가 존재한다.
 - 비선점형(Non-Preemptive) 스케줄링: 프로세스 종료 or I/O 등의 이벤트가 있을 때까지 실행 보장 (처리시간 예측 어려움)
 - 선점형(Preemptive) 스케줄링: OS가 CPU의 사용권을 선점할 수 있는 경우 (강제 회수 가능)
