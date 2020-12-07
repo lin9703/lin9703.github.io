@@ -2,7 +2,7 @@
 layout: post
 title: "ArrayList vs LinkedList"
 author: "Lin"
-tags: 자료구조 JAVA CSStudy
+tags: 자료구조 JAVA
 ---
 ### CS Study Day 2 - Part1
 

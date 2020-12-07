@@ -2,7 +2,7 @@
 layout: post
 title: "Array vs LinkedList"
 author: "Lin"
-tags: 자료구조 CSStudy
+tags: 자료구조
 ---
 ### CS Study Day 1 - Part1
 

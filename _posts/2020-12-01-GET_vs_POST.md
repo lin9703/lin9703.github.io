@@ -2,7 +2,7 @@
 layout: post
 title: "GET, POST 방식의 차이점"
 author: "Lin"
-tags: 개발지식 CSStudy
+tags: 네트워크
 ---
 ### CS Study Day 1 - Part3
 

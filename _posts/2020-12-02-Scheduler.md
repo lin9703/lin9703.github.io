@@ -2,7 +2,7 @@
 layout: post
 title: "스케쥴러 (장기, 중기, 단기)"
 author: "Lin"
-tags: 운영체제 CSStudy
+tags: 운영체제
 ---
 ### CS Study Day 1 - Part4
 

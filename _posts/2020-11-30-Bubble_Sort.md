@@ -2,7 +2,7 @@
 layout: post
 title: "거품 정렬(Bubble Sort)"
 author: "Lin"
-tags: 알고리즘 CSStudy
+tags: 알고리즘
 ---
 ### CS Study Day 1 - Part2
 

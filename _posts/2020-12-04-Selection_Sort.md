@@ -2,7 +2,7 @@
 layout: post
 title: "선택 정렬(Selection Sort)"
 author: "Lin"
-tags: 알고리즘 CSStudy
+tags: 알고리즘
 ---
 ### CS Study Day 2 - Part2
 
