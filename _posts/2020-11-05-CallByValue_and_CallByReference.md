@@ -5,6 +5,9 @@ author: "Lin"
 tags: JAVA
 ---
 
++ 2020.12.07 update
+
+<br>
 메소드로 인자값을 넘기는 방법은 2가지가 있다.
 <br><br>
 ## Call by value
@@ -22,9 +25,16 @@ tags: JAVA
 ---
 
 <h2>자바는 항상 Call by value이다.<br>
-불행하게도, 객체를 전달할 때 Reference를 전달하는데 이것은 초보자들을 헷갈리게 한다.</h2>
+더 정확하게 말하자면 Call by copy-of-the-variable-value 이다.</h2>
 
 [출처](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value)
+
+**there is no difference between passing primitive data types and Objects** when talking about method arguments.<br>
+메소드의 전달 인자를 말할 때, primitive 데이터 타입과 객체는 어떠한 차이도 없다.
+
+You always pass a copy of the bits of the value of the reference!
+- If it's a **primitive data type**, these bits will contain **the value of the primitive data type itself**.
+- If it's an **Object**, the bits will contain the value of **the address that tells the JVM how to get to the Object**. 
 
 <br>
 
