@@ -4,7 +4,7 @@ title: "HTTP와 HTTPS"
 author: "Lin"
 tags: 네트워크
 ---
-### CS Study Day 2 - Part3
+### CS Study Day 3 - Part3
 
 <br>
 
