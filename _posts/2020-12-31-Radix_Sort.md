@@ -4,7 +4,7 @@ title: "기수 정렬(Radix Sort)"
 author: "Lin"
 tags: 알고리즘
 ---
-### CS Study Day 1 - Part2
+### CS Study Day 7 - Part2
 
 <br>
 Sorting 알고리즘은 크게 Comparions 방식과 Non-Comparions 방식으로 나뉜다.
