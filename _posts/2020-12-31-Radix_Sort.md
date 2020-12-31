@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "거품 정렬(Bubble Sort)"
+title: "기수 정렬(Radix Sort)"
 author: "Lin"
 tags: 알고리즘
 ---
@@ -16,7 +16,7 @@ Sorting 알고리즘은 크게 Comparions 방식과 Non-Comparions 방식으로 
 <hr>
 <br>
 
-## 거품 정렬(Bubble Sort)
+## 기수 정렬(Radix Sort)
 - 데이터를 구성하는 기본 요소(Radix)를 이용하여 정렬을 진행하는 방식
 - 하나의 기수마다 하나의 버킷을 생성하여, 분류를 한 뒤에, 버킷 안에서 또 정렬을 하는 방식
 
