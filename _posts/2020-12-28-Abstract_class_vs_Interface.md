@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JVM"
+title: "추상 클래스와 인터페이스"
 author: "Lin"
 tags: JAVA
 ---

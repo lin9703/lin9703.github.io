@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JVM"
+title: "인터럽트(Interrupt)"
 author: "Lin"
 tags: JAVA
 ---

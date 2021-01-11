@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JVM"
+title: "B Tree & B+ Tree"
 author: "Lin"
 tags: JAVA
 ---

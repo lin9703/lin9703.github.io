@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JVM"
+title: "정규화"
 author: "Lin"
 tags: JAVA
 ---
