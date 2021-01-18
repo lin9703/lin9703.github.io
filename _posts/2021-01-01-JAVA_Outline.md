@@ -80,7 +80,10 @@ tags: JAVA
 #### 조건 제어문
 ##### switch 문
 switch(Expression)에서 Expression의 값에 해당하는 value의 case를 수행 
-- Expression은 char, byte, short, int형만 가능 
+- Expression은 변수(char, byte, short, int)형만 가능 
+- Refer 클래스의 Character, Byte, Short, Integer 객체도 사용 가능 
+- 자바 7 버전부터 String도 사용 가능 
+- Enum(열거형) 가능 
 
 <br>
 
