@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "주소창에 naver.com을 치면 일어나는 일"
+title: "로드 밸런싱"
 author: "Lin"
 tags: 네트워크 
 ---

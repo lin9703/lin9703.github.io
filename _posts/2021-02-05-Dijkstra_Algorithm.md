@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "LCA(Lowest Common Ancestor"
+title: "다익스트라 알고리즘"
 author: "Lin"
 tags: 알고리즘
 ---
@@ -22,7 +22,7 @@ tags: 알고리즘
 
 <br>
 
-###동작 과정
+### 동작 과정
 
 Dijkstra의 알고리즘에서는 시작 정점에서 다른 정점으로 가는 최단 거리를 기록하는 배열이 반드시 있어야 한다.
 
