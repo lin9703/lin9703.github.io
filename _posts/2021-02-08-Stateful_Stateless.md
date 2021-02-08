@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "유니온 파인드"
+title: "Stateful vs. Stateless 서비스와 HTTP 및 REST"
 author: "Lin"
-tags: 알고리즘 
+tags: 네트워크 
 ---
 ### CS Study Day 15 - Part3
 
