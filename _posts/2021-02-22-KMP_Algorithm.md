@@ -19,6 +19,5 @@ tags: 알고리즘
 <br>
 [참고]
 
-https://bowbowbow.tistory.com/6
-
-https://blog.naver.com/PostView.nhn?blogId=kks227&logNo=220917078260&categoryNo=299&parentCategoryNo=0&viewDate=&currentPage=4&postListTopCurrentPage=&from=menu&userTopListOpen=true&userTopListCount=5&userTopListManageOpen=false&userTopListCurrentPage=4
+- <https://bowbowbow.tistory.com/6/>
+- <https://blog.naver.com/PostView.nhn?blogId=kks227&logNo=220917078260&categoryNo=299&parentCategoryNo=0&viewDate=&currentPage=4&postListTopCurrentPage=&from=menu&userTopListOpen=true&userTopListCount=5&userTopListManageOpen=false&userTopListCurrentPage=4/>
