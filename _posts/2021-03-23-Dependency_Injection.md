@@ -39,7 +39,8 @@ tags: Android
     3. Field Injection (Property in Kotlin)
 
 - 의존성 주입을 통한 서비스 제공 
-```Java
+
+```java
 // 1. Constructor Injection
 // 미리 초기화된 서비스의 인스턴스 필요
 class Client(private val service1: Service1) {  
@@ -58,6 +59,7 @@ class Client(private val service1: Service1) {
     }
 }
 ```
+
 1번과 2번은 자바에서 자주 사용되나, 코틀린에서는 자주 사용되지 않는다. <br>
 자바의 Field injection과 비슷한 Property injection을 코틀린에서 사용할 수 있다. 
 
