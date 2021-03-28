@@ -39,7 +39,7 @@ tags: Android
     3. Field Injection (Property in Kotlin)
 
 - 의존성 주입을 통한 서비스 제공 
-```Kotlin
+```Java
 // 1. Constructor Injection
 // 미리 초기화된 서비스의 인스턴스 필요
 class Client(private val service1: Service1) {  
