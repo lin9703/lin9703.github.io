@@ -5,7 +5,7 @@ author: "Lin"
 tags: Android
 ---
 
-> 본 게시물은 [<실무에 바로 적용하는 안드로이드 프로그래밍>](https://book.naver.com/bookdb/book_detail.nhn?bid=18123166) 책을 기반으로 작성되었습니다.
+> 본 게시물은 [실무에 바로 적용하는 안드로이드 프로그래밍](https://book.naver.com/bookdb/book_detail.nhn?bid=18123166) 책을 기반으로 작성되었습니다.
 
 <br>
 
@@ -66,5 +66,18 @@ Activity.setContentView(layoutResID: Int)
     - 이벤트에 응답하기 위해 생성되는 객체를 `리스너(listener)`
     - 리스너는 해당 이벤트의 `리스너 인터페이스(listener interface)` 구현 
     
+<br>
+
+## 안드로이드 앱 빌드 절차
+- 안드로이드 스튜디오가 자동으로 앱을 빌드
+    - 프로젝트의 빌드와 관리에 필요한 모든 것을 그래들(Gradle) 자동화 빌드 도구를 사용해 처리 
+- 빌드하는 동안 안드로이드 도구가 리소스, 코드, 그리고 AndroidManifest.xml를 가지고 하나의 .apk 파일 생성 
+    - .apk 파일은 실제 장치나 애뮬레이터에서 실행될 수 있게 디버그 키 부여 
+
+### 레이아웃 파일의 내용은 어떻게 앱의 View 객체로 변환될까?
+1. aapt2(Android Asset Packaging Tool 2)가 레이아웃 파일의 리소스들을 압축된 형태로 컴파일
+2. 컴파일된 리소스들이 .apk 파일로 통합
+3. MainActivity의 onCreate(Bundle?) 메서드에서 setContentView(...) 메서드가 호출되면,
+MainActivity는 LayoutInflater 클래스를 사용해서 레이아웃 파일에 정의된 각 View의 인스턴스 생성 
 
 
