@@ -6,7 +6,9 @@ tags: Coroutine
 
 ---
 
-> 본 게시물은 [코틀린 동시성 프로그래밍 예제로 배우는 코틀린 동시성](https://book.naver.com/bookdb/book_detail.nhn?bid=16364412) 책을 기반으로 작성되었습니다. 보다 더 자세한 내용을 책을 참고해주세요.
+> 본 게시물은 [코틀린 동시성 프로그래밍 예제로 배우는 코틀린 동시성](https://book.naver.com/bookdb/book_detail.nhn?bid=16364412) 책을 기반으로 작성되었습니다. 
+> 
+> 보다 더 자세한 내용을 책을 참고해주세요.
 
 <br>
 
